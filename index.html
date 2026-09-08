@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gnome Pear Club · Find Your Realm</title>
+  <meta name="description" content="Take the Realmfinder, meet all 23 members, and visit the Gnome Pear Club beneath the old pear tree.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell" id="top">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Gnome Pear Club home"><span class="brand-mark">🍐</span><span>Gnome Pear Club</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#realmfinder">Realmfinder</a>
+        <a href="#earn">Earn Pears</a>
+        <a href="#class-photo">Class Photo</a>
+        <a href="#members">Members</a>
+        <a href="profile.html">My Profile</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-pad">
+        <div class="hero-copy">
+          <p class="eyebrow">The club beneath the old pear tree</p>
+          <h1>Find your <em>realm.</em></h1>
+          <p class="lede">Fourteen decisive choices reveal your magical realm, your natural contribution, and the working circle where your energy can help the clan grow.</p>
+          <div class="stats" aria-label="Realmfinder facts">
+            <div><strong>14</strong><span>questions</span></div>
+            <div><strong>8</strong><span>realms</span></div>
+            <div><strong>6</strong><span>circles</span></div>
+            <div><strong>4m</strong><span>journey</span></div>
+          </div>
+        </div>
+        <div class="hero-orbit" aria-hidden="true">
+          <span class="orbit-ring ring-one"></span><span class="orbit-ring ring-two"></span>
+          <span class="pear-orb">🍐</span>
+          <span class="orbit-label label-one">seed</span><span class="orbit-label label-two">story</span><span class="orbit-label label-three">craft</span>
+        </div>
+      </section>
+
+      <section id="realmfinder" class="section-pad survey-section">
+        <div class="section-kicker">✦ Realmfinder 2.0</div>
+        <div id="survey-root" class="survey-card">
+          <div class="survey-intro">
+            <div class="seal">GPC</div>
+            <div>
+              <h2>Where do you belong?</h2>
+              <p>Choose by instinct. Your answers weigh your values, conflict style, energy, hobbies, risk tolerance, pace, and preferred way to build with others.</p>
+            </div>
+          </div>
+          <label class="alias-label" for="alias">Your gnome alias <span>(optional)</span></label>
+          <input id="alias" class="text-input" type="text" maxlength="32" placeholder="Your gnome alias">
+          <button class="button button-primary" id="start-survey">Enter the map <span>→</span></button>
+          <div class="realm-map" aria-label="The eight realms">
+            <span>🌳 Middle Forest</span><span>🐉 Ember Hollow</span><span>🌙 Hollow Woods</span><span>🍄 Spore Grove</span>
+            <span>🛡️ Ironbark Frontier</span><span>🪞 The Violet Veil</span><span>✨ Light Realm</span><span>⚙️ Steam Realm</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad footprints-section" aria-labelledby="footprints-title">
+        <p class="eyebrow">Recent travelers</p>
+        <h2 id="footprints-title">Footprints on the path</h2>
+        <div id="traveler-list" class="traveler-list"><p class="empty-note">No footsteps yet. Be the first gnome through the gate.</p></div>
+      </section>
+
+      <section id="earn" class="section-pad ledger-section" aria-labelledby="ledger-title">
+        <p class="eyebrow">The pear ledger</p>
+        <h2 id="ledger-title">Grow your profile. <em>Earn your fruit.</em></h2>
+        <div class="ledger-total"><span>Task credits</span><strong>$<span id="credit-total">0.00</span></strong><small>of $7 pending or earned</small></div>
+        <p class="section-note">Complete each task once. Credits are recorded on this device and remain pending until a club steward verifies the submission and reward eligibility.</p>
+        <div class="task-grid">
+          <article class="task-card"><span class="task-icon">🪪</span><div><p class="task-type">Identity rune</p><h3>Finish your profile</h3><p>Tell the clan what to call you, where you are, and how to reach you.</p></div><strong>+$1</strong><a class="text-link" href="profile.html">Sign in &amp; claim</a></article>
+          <article class="task-card"><span class="task-icon">🗺️</span><div><p class="task-type">Realm rune</p><h3>Discover your realm</h3><p>Answer 14 magical choices to reveal your realm and working circle.</p></div><strong>+$1</strong><a class="text-link" href="#realmfinder">Take survey</a></article>
+          <article class="task-card"><span class="task-icon">📜</span><div><p class="task-type">Growth rune</p><h3>Member discovery</h3><p>Share what you need, what you know, and the forest you want to build.</p></div><strong>+$5</strong><button class="text-link" id="growth-task">Sign in to begin</button></article>
+        </div>
+      </section>
+
+      <section id="class-photo" class="section-pad class-section" aria-labelledby="class-title">
+        <p class="eyebrow">Beneath the pear boughs</p>
+        <h2 id="class-title">The class of <em>twenty-three.</em></h2>
+        <p class="section-note">All realms. One knoll. A rare moment when every cap, beard, mushroom, monocle, and slightly suspicious grin faced the same direction.</p>
+        <figure class="class-photo">
+          <img src="https://rcw3-pear-gnome-club.vincenzoweb3.chatgpt.site/art/class-photo.png" alt="Twenty-three Gnome Pear Club members seated together on rustic forest bleachers">
+          <figcaption><span>Gnome Pear Club</span><span>Official Class Portrait · 2026</span></figcaption>
+        </figure>
+      </section>
+
+      <section id="members" class="section-pad members-section" aria-labelledby="members-title">
+        <p class="eyebrow">The roll call</p>
+        <h2 id="members-title">Meet the <em>club.</em></h2>
+        <p class="section-note">Twenty-three distinct spirits, gathered from every corner of the grove. Select a portrait to bring a member into the lantern light.</p>
+        <div class="member-feature">
+          <div class="member-portrait"><img id="member-image" src="https://rcw3-pear-gnome-club.vincenzoweb3.chatgpt.site/members/bombshell.png" alt="3D portrait of Bombshell"></div>
+          <div class="member-details"><span id="member-number" class="member-number">01</span><p class="eyebrow">Member spotlight</p><h3 id="member-name">Bombshell</h3><p id="member-role">Gnome Pear Club member</p><div class="member-controls"><button class="round-button" id="member-prev" aria-label="Previous member">←</button><span id="member-count">1 / 23</span><button class="round-button" id="member-next" aria-label="Next member">→</button></div></div>
+        </div>
+        <div id="member-list" class="member-list" aria-label="Gnome Pear Club members"></div>
+      </section>
+
+      <section class="realm-directory section-pad" aria-labelledby="realms-title">
+        <p class="eyebrow">The eight paths</p>
+        <h2 id="realms-title">Every realm has a <em>role.</em></h2>
+        <div class="realm-grid">
+          <article><span>🌳</span><h3>Middle Forest</h3><p>Stewardship, balance, and the living center of the grove.</p></article>
+          <article><span>🐉</span><h3>Ember Hollow</h3><p>Flame, power, creation, and bold transformation.</p></article>
+          <article><span>🌙</span><h3>Hollow Woods</h3><p>Death, spirit, truth, and the wisdom of what remains.</p></article>
+          <article><span>🍄</span><h3>Spore Grove</h3><p>Connection, mind, network, and shared possibility.</p></article>
+          <article><span>🛡️</span><h3>Ironbark Frontier</h3><p>Protection, endurance, boundaries, and brave exploration.</p></article>
+          <article><span>🪞</span><h3>The Violet Veil</h3><p>Perspective, mystery, mischief, and unexpected turns.</p></article>
+          <article><span>✨</span><h3>Light Realm</h3><p>Joy, welcome, clarity, and the energy that lifts a room.</p></article>
+          <article><span>⚙️</span><h3>Steam Realm</h3><p>Systems, tools, invention, and useful things made real.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-pad"><div class="footer-brand"><span class="brand-mark">🍐</span><span>Gnome Pear Club</span></div><p>Plant something. Build something. Share what you know. Leave the forest healthier.</p><a href="#top">Back to the old pear tree ↑</a></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
